@@ -1,9 +1,0 @@
-{
-    "mysite": {
-        "metadata": {
-            "title": "Magnetar dev - Personal portfolio website on NextJS | Portfolio work",
-            "description": "My personal portfolio website on NextJS and TypeScript with multilingual support and SEO optimization."
-        },
-        "info": "<title>Magnetar's website</title><stackCard></stackCard><fullWidthImage>/magnetar-site/img/mysite/main_page.png</fullWidthImage><paragraph>My portfolio website. Built with NextJS, TypeScript and styled with TailwindCSS.</paragraph><paragraph>The design has support for different contrast levels, allowing people with specific color perception to interact with the site. The site is also localized into different languages and has well-implemented SEO.</paragraph>"
-    }
-}

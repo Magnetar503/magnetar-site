@@ -1,9 +1,0 @@
-{
-    "star_channel": {
-        "metadata": {
-            "title": "Star Channel - Telegram bot for subscriptions | Portfolio project",
-            "description": "Telegram bot for purchasing a temporary subscription to a private TG channel using stars and rubles."
-        },
-        "info": "<title>StarChannel</title><stackCard></stackCard><paragraph>Telegram bot for selling temporary subscriptions for stars to a private channel. Written in Python using aiogram and SQLite database.</paragraph><paragraph>Any number of subscription tiers can be created. For each tier, the price, description, title, and access duration to the channel are configured. The bot warns the user in advance about the upcoming subscription expiration, and if there is no renewal, it automatically removes the person from the TG channel. If the user does not like the content and asks for a refund of the stars, the bot includes refund functionality.</paragraph><paragraph>The built-in admin panel allows configuring certain parameters in the bot. You can set the lifetime of the invitation link and the number of people who can join through it. You can also change the reminder time for subscription expiration and change the ID of the target channel.</paragraph>"
-    }
-}
