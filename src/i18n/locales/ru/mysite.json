@@ -1,0 +1,9 @@
+{
+    "mysite": {
+        "metadata": {
+            "title": "Magnetar dev - личный сайт-портфолио на NextJS | Работа из портфолио",
+            "description": "Мой личный сайт-портфолио на NextJS и TypeScript с мультиязычностью и SEO-оптимизацией."
+        },
+        "info": "<title>Magnetar's website</title><stackCard></stackCard><fullWidthImage>/magnetar-site/img/mysite/main_page.png</fullWidthImage><paragraph>Мой сайт-портфолио. Написан на NextJS, TypeScript и стилизован с помощью TailwindCSS.</paragraph><paragraph>Внешний вид имеет оформление под разные уровни контраста, что позволяет взаимодействовать с сайтом людям, со специфичным восприятием цветов. Также сайт локализован на разные языки и имеет хорошо прописанное SEO.</paragraph>"
+    }
+}

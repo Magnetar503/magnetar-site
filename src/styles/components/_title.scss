@@ -1,0 +1,69 @@
+@mixin iconColor($text-color, $bg-color) {
+    //$blur: 42px;
+
+    box-sizing: content-box;
+    padding: torem(6);
+    color: $text-color;
+    background-color: $bg-color;
+    border-radius: torem(8);
+
+    @include prefersContrast(more) {
+        background-color: transparent;
+        color: var(--font-color);
+    }
+    //filter: drop-shadow($text-color 0px 0px 20px);
+    //-webkit-filter: drop-shadow($text-color 0px 0px 20px);
+
+    //-webkit-box-shadow: 0px 0px $blur 0px $text-color;
+    //-moz-box-shadow: 0px 0px $blur 0px $text-color;
+    //box-shadow: 0px 0px $blur 0px $text-color;
+}
+
+
+.title {
+    font-weight: var(--title-font-weight);
+
+    &[data-icon-color="red"] svg {
+        @include iconColor(rgb(var(--red-rgb)), rgba(var(--red-rgb), 0.15));
+    }
+
+    &[data-icon-color="purple"] svg {
+        @include iconColor(rgb(var(--purple-rgb)), rgba(var(--purple-rgb), 0.15));
+    }
+
+    &[data-icon-color="pale-blue"] svg {
+        @include iconColor(rgb(var(--pale-blue-rgb)), rgba(var(--pale-blue-rgb), 0.15));
+    }
+
+    &[data-icon-color="skylight-blue"] svg {
+        @include iconColor(rgb(var(--skylight-blue-rgb)), rgba(var(--skylight-blue-rgb), 0.15));
+    }
+
+    &[data-icon-color="blue"] svg {
+        @include iconColor(rgb(var(--blue-rgb)), rgba(var(--blue-rgb), 0.15))
+    }
+
+    &[data-icon-color="pale-orange"] svg {
+        @include iconColor(rgb(var(--pale-orange-rgb)), rgba(var(--pale-orange-rgb), 0.15))
+    }
+
+    &[data-icon-color="green"] svg {
+        @include iconColor(rgb(var(--green-rgb)), rgba(var(--green-rgb), 0.15))
+    }
+
+    &[data-icon-color="telegram"] svg {
+        @include iconColor(rgb(var(--telegram-rgb)), rgba(var(--telegram-rgb), 0.15))
+    }
+
+    &[data-icon-color="discord"] svg {
+        @include iconColor(rgb(var(--discord-rgb)), rgba(var(--discord-rgb), 0.15))
+    }
+
+    &[data-icon-color="vk"] svg {
+        @include iconColor(rgb(var(--vk-rgb)), rgba(var(--vk-rgb), 0.15))
+    }
+
+    &[data-icon-color="max"] svg {
+        @include iconColor(rgb(var(--max-rgb)), rgba(var(--max-rgb), 0.15))
+    }
+}

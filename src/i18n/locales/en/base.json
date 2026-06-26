@@ -1,0 +1,79 @@
+{
+    "metadata": {
+        "title": "Magnetar full-stack development",
+        "description": "Turnkey development of web applications using React or NextJS and backend using Python and FastAPI"
+    },
+
+    "header": {
+        "title": {
+            "text": "Mαgnετaρ",
+            "hover_text": "Magnetar"
+        },
+        "link": {
+            "about": {
+                "text": "About me",
+                "hover_text": "Information about me"
+            },
+            "skills": {
+                "text": "My skills",
+                "hover_text": "Information about my skills"
+            },
+            "projects": {
+                "text": "Projects",
+                "hover_text": "Information about my projects"
+            },
+            "services": {
+                "text": "Services",
+                "hover_text": "Information about services"
+            }
+        },
+        "button": {
+            "change_language": {
+                "hover_text": "Switch language"
+            },
+            "burger_menu": {
+                "hover_text": "Open navigation menu"
+            }
+        }
+    },
+
+    "footer": {
+        "title": {
+            "text": "Made by Magnetar with NextJS, SCSS und Tailwind."
+        },
+        "p": {
+            "text": "Copyright © 2026 Magnetar. All rights reserved. Copying and editing is prohibited."
+        }
+    },
+
+    "button": {
+        "telegram": {
+            "text": "Telegram",
+            "hover_text": "Link to Telegram"
+        },
+        "github": {
+            "text": "GitHub",
+            "hover_text": "Link to GitHub"
+        },
+        "modrinth": {
+            "text": "Modrinth",
+            "hover_text": "Link to Modrinth"
+        },
+        "pypi": {
+            "text": "PyPI",
+            "hover_text": "Link to PyPI"
+        },
+        "readme": {
+            "text": "Read more",
+            "hover_text": "Read in more detail"
+        },
+        "kwork": {
+            "text": "Kwork",
+            "hover_text": "Link to Kwork"
+        },
+        "buy": {
+            "text": "Buy",
+            "hover_text": ""
+        }
+    }
+}

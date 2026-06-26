@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@custom-variant hover-click-only {
+    @media (hover: hover) {
+        &:hover {
+            @slot;
+        }
+    }
+}
+
+@custom-variant hover-tap-only {
+    @media (hover: none) {
+        &:active {
+            @slot;
+        }
+    }
+}
+
+@custom-variant hover-click-tap {
+    @media (hover: hover) {
+        &:hover {
+            @slot;
+        }
+    }
+    @media (hover: none) {
+        &:active {
+            @slot;
+        }
+    }
+}
+
+@utility fluid-text {
+    --fluid-min: 16;
+    --fluid-max: 24;
+
+    --_min: var(--fluid-min, 16);
+    --_max: var(--fluid-max, 36);
+
+    --_vw-min: 22.5;   /* var(--min-viewport-width) / 16 */
+    --_vw-max: 82.5;   /* var(--max-viewport-width) / 16 */
+
+    --_min-rem: calc(var(--_min) / 16 * 1rem);
+    --_max-rem: calc(var(--_max) / 16 * 1rem);
+
+    --_slope: calc(
+            (var(--_max) - var(--_min)) /
+            (var(--_vw-max) - var(--_vw-min)) / 16
+    );
+    --_intercept: calc(var(--_min-rem) - var(--_vw-min) * 1rem * var(--_slope));
+
+    font-size: clamp(
+            var(--_min-rem),
+            var(--_intercept) + var(--_slope) * 100vw,
+            var(--_max-rem)
+    );
+}
+

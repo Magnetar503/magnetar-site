@@ -1,0 +1,93 @@
+@use 'sass:math';
+
+
+@mixin marginCenter {
+    margin: auto;
+}
+
+@mixin flexCenter($is-inline: false) {
+    @if ($is-inline) {
+        display: inline-flex;
+    } @else {
+        display: flex;
+    }
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+@mixin adaptFontSize($min: 16, $max: 36) {
+    $max-viewport-width: 1400;  // максимальная ширина страницы по макету
+    $min-viewport-width: 360;   // минимальная ширина страницы по макету
+
+    $max-size: math.div($max, 16);
+    $min-size: math.div($min, 16);
+    $max-width: math.div($max-viewport-width, 16);
+    $min-width: math.div($min-viewport-width, 16);
+
+    $slope: math.div(($max-size - $min-size), ($max-width - $min-width));
+    $y-axis-intersection: -$min-width * $slope + $min-size;
+
+    font-size: clamp(
+            #{$min-size * 1rem},
+            #{$y-axis-intersection * 1rem} + #{$slope * 100vw},
+            #{$max-size * 1rem}
+    );
+}
+
+@mixin backdropBlur(
+    $blur: 3px,
+    $backdrop-bg-color: rgba(0, 0, 0, 0.2),
+    $fallback-color: rgba(0, 0, 0, 0.9)
+) {
+    background-color: $fallback-color;
+
+    @supports (backdrop-filter: blur(#{$blur})) or (-webkit-backdrop-filter: blur(#{$blur})) {
+        background-color: $backdrop-bg-color;
+    }
+
+    @supports (backdrop-filter: blur(#{$blur})) {
+        backdrop-filter: blur(#{$blur});
+    }
+
+    @supports (-webkit-backdrop-filter: blur(#{$blur})) {
+        -webkit-backdrop-filter: blur(#{$blur});
+    }
+}
+
+@mixin textTruncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin textTruncateMultiline($lines: 2) {
+    line-clamp: $lines;
+
+    @supports (display: -webkit-box) {
+        display: -webkit-box;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+@mixin noDisplay {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+

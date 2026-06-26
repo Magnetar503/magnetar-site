@@ -1,0 +1,218 @@
+{
+    "main_page": {
+        "metadata": {
+            "title": "Magnetar dev | Главная",
+            "description": "Разработка под ключ веб-приложений на React или NextJS и бекенда на Python и FastAPI"
+        }
+    },
+
+    "about_section": {
+        "link": {
+            "telegram": {
+                "text": "Мой Telegram",
+                "hover_text": "Ссылка на мой Telegram"
+            },
+            "github": {
+                "hover_text": "Ссылка на мой GitHub"
+            },
+            "modrinth": {
+                "hover_text": "Ссылка на мой Modrinth"
+            },
+            "to_my_projects": {
+                "text": "Мои проекты",
+                "hover_text": "Перейти к моим проектам"
+            }
+        },
+        "title": {
+            "text": "Im Magnetar<br></br><span>Full-stack</span> разработчик"
+        },
+        "p": {
+            "text": "Я <pale_blue>full-stack</pale_blue> разработчик, специализируюсь на создании современных веб-сервисов и интерактивных ботов. На стороне бэкенда разворачиваю API с помощью <python>Python</python>, <fastapi>FastAPI</fastapi> и валидации данных через <pydantic>Pydantic</pydantic>. Интерфейсы создаю на <typescript>TypeScript</typescript> в связке с <reactjs>React</reactjs> / Next.js, уделяя внимание структурированной верстке по <bem_methodology>БЭМ</bem_methodology> или скорости разработки с <tailwind>TailwindCSS</tailwind>. Разрабатываю функциональных ботов и приложения для <telegram>Telegram</telegram> и <discord>Discord</discord>."
+        }
+    },
+
+    "services_section": {
+        "title": {
+            "text": "Мои <italic_red>Услуги</italic_red>"
+        },
+        "p": {
+            "text": "Разработка под ключ: функциональные боты для Telegram и Discord, современные сайты и Mini Apps на React/Next.js и Python. Работаю строго по вашему ТЗ, а для фронтенда потребуется готовый макет (Figma). Беру на себя весь цикл: от проектирования архитектуры до деплоя на сервер.<br></br>Для обсуждения проекта пишите в <tg_link>Telegram</tg_link>."        }
+    },
+
+    "skills_section": {
+        "title": {
+            "text": "Мои <italic_pale_orange>навыки</italic_pale_orange>"
+        }
+    },
+
+    "projects_section": {
+        "title": {
+            "text": "Мои <italic_pale_blue>проекты</italic_pale_blue>"
+        }
+    },
+
+    "skillcard": {
+        "title": {
+            "backend": {
+                "text": "<italic_skylight_blue>Backend</italic_skylight_blue> dev"
+            },
+            "frontend": {
+                "text": "<italic_blue>Frontend</italic_blue> dev"
+            },
+            "cicd": {
+                "text": "<italic_purple>CI/CD</italic_purple>, окружение"
+            }
+        }
+    },
+
+    "projects_tabs": {
+        "trigger": {
+            "all_projects": {
+                "text": "Все работы",
+                "hover_text": "Посмотреть все работы"
+            },
+            "sites": {
+                "text": "Сайты",
+                "hover_text": "Переключить на работы с сайтами"
+            },
+            "bots": {
+                "text": "Боты",
+                "hover_text": "Переключить на работы с ботами"
+            },
+            "other": {
+                "text": "Другие",
+                "hover_text": "Переключить на остальные работы"
+            }
+        }
+    },
+
+    "services_tabs": {
+        "trigger": {
+            "usd": {
+                "text": "USD",
+                "hover_text": "Переключить валюту на доллар США"
+            },
+            "rub": {
+                "text": "RUB",
+                "hover_text": "Переключить валюту на российский рубль"
+            }
+        }
+    },
+
+    "project_card": {
+        "aioheleket": {
+            "title": {
+                "text": "aioheleket"
+            },
+            "description": {
+                "text": "Асинхронная Python библиотека для API криптоплатежей Heleket."
+            }
+        },
+        "star_channel": {
+            "title": {
+                "text": "StarChannel"
+            },
+            "description": {
+                "text": "Telegram бот для покупки временной подписки в ТГ канал за звёзды и криптовалюту."
+            }
+        },
+        "skylightservices_bot": {
+            "title": {
+                "text": "SkylightServices Bot"
+            },
+            "description": {
+                "text": "Discord бот для обработки заказов на сервере."
+            }
+        },
+        "mysite": {
+            "title": {
+                "text": "Magnetar's Site"
+            },
+            "description": {
+                "text": "Мой сайт-портфолио."
+            }
+        },
+        "cho_za_server": {
+            "title": {
+                "text": "ChoZaServer"
+            },
+            "description": {
+                "text": "Сайт для покупки доната на Minecraft сервере."
+            }
+        },
+        "badge": {
+            "library": {
+                "text": "Библиотека"
+            },
+            "vk_bot": {
+                "text": "Бот ВК"
+            },
+            "discord_bot": {
+                "text": "Discord бот"
+            },
+            "telegram_bot": {
+                "text": "Telegram бот"
+            },
+            "site_design": {
+                "text": "Вёрстка"
+            },
+            "website": {
+                "text": "Сайт"
+            }
+        }
+    },
+
+    "service": {
+        "telegram_bot": {
+            "title": {
+                "text": "Telegram бот"
+            },
+            "description": {
+                "text": "Разработка Telegram ботов любой сложности под ключ. Интеграция с внешними API, подключение платежных систем, автоматическая модерация и админ-панели. Гарантирую высокую скорость работы и отказоустойчивость."
+            }
+        },
+        "site_design": {
+            "title": {
+                "text": "Вёрстка"
+            },
+            "description": {
+                "text": "Качественная адаптивная вёрстка. Создание отзывчивых и чистых интерфейсов с использованием БЭМ-методологии или TailwindCSS. Сайт будет идеально отображаться на любых экранах."
+            }
+        },
+        "site": {
+            "title": {
+                "text": "Сайт \\ TMA"
+            },
+            "description": {
+                "text": "Создание современных веб-приложений и Telegram Mini Apps (TMA). Полноценная Full-stack разработка: от проектирования быстрого бэкенда на FastAPI до оптимизированного фронтенда на React/Next.js."
+            }
+        },
+        "discord_bot": {
+            "title": {
+                "text": "Discord бот"
+            },
+            "description": {
+                "text": "Создание многофункциональных Discord ботов. Настройка автоматической модерации, системы уровней, выдачи ролей и кастомных интерактивных команд. Интеграция с сервисами и стабильная работа 24/7."
+            }
+        },
+        "vk_bot": {
+            "title": {
+                "text": "Бот для ВК"
+            },
+            "description": {
+                "text": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem"
+            }
+        },
+        "max_bot": {
+            "title": {
+                "text": "Бот для MAX"
+            },
+            "description": {
+                "text": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem"
+            }
+        },
+        "price": {
+            "text": "от <pale_blue>{price}</pale_blue>"
+        }
+    }
+}

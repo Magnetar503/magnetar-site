@@ -1,0 +1,79 @@
+{
+    "metadata": {
+        "title": "Magnetar full-stack разработка",
+        "description": "Разработка подъ ключъ вебъ-приложеній на React или NextJS и бекенда на Python и FastAPI"
+    },
+
+    "header": {
+        "title": {
+            "text": "Mαgnετaρ",
+            "hover_text": "Magnetar"
+        },
+        "link": {
+            "about": {
+                "text": "Обо мнѣ",
+                "hover_text": "Информація обо мнѣ"
+            },
+            "skills": {
+                "text": "Мои навыки",
+                "hover_text": "Информація о моихъ навыкахъ"
+            },
+            "projects": {
+                "text": "Проекты",
+                "hover_text": "Информація о моихъ проектахъ"
+            },
+            "services": {
+                "text": "Услуги",
+                "hover_text": "Информація объ услугахъ"
+            }
+        },
+        "button": {
+            "change_language": {
+                "hover_text": "Переключить языкъ"
+            },
+            "burger_menu": {
+                "hover_text": "Вызвать меню для навигаціи по страницѣ"
+            }
+        }
+    },
+
+    "footer": {
+        "title": {
+            "text": "Made by Magnetar with NextJS, SCSS und Tailwind."
+        },
+        "p": {
+            "text": "Copyright © 2026 Magnetar. Всѣ права защищены. Копированіе и редактированіе не допускается."
+        }
+    },
+
+    "button": {
+        "telegram": {
+            "text": "Telegram",
+            "hover_text": "Ссылка на Telegram"
+        },
+        "github": {
+            "text": "GitHub",
+            "hover_text": "Ссылка на GitHub"
+        },
+        "modrinth": {
+            "text": "Modrinth",
+            "hover_text": "Ссылка на Modrinth"
+        },
+        "pypi": {
+            "text": "PyPI",
+            "hover_text": "Ссылка на PyPI"
+        },
+        "readme": {
+            "text": "Подробнѣе",
+            "hover_text": "Прочитать подробнѣе"
+        },
+        "kwork": {
+            "text": "Kwork",
+            "hover_text": "Ссылка на Kwork"
+        },
+        "buy": {
+            "text": "Купить",
+            "hover_text": ""
+        }
+    }
+}

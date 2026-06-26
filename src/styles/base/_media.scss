@@ -1,0 +1,129 @@
+@mixin minWidthMedia($width, $use-rem: false) {
+    @if ($use-rem) {
+        @media (min-width: torem($width)) {
+            @content;
+        }
+    } @else {
+        @media (min-width: #{$width}px) {
+            @content;
+        }
+    }
+}
+
+@mixin maxWidthMedia($width, $use-rem: false) {
+    @if ($use-rem) {
+        @media (max-width: torem($width)) {
+            @content;
+        }
+    } @else {
+        @media (max-width: #{$width}px) {
+            @content;
+        }
+    }
+}
+
+@mixin betweenWidth($min, $max, $use-rem: false) {
+    @if ($use-rem) {
+        @media (min-width: torem($min)) and (max-width: torem($max)) {
+            @content;
+        }
+    } @else {
+        @media (min-width: #{$min}px) and (max-width: #{$max}px) {
+            @content;
+        }
+    }
+}
+
+@mixin desktopAbove($use-rem: false) {
+    @include minWidthMedia(1281, $use-rem) {
+        @content;
+    }
+}
+
+@mixin desktop($use-rem: false) {
+    @include maxWidthMedia(1280, $use-rem) {
+        @content;
+    }
+}
+
+@mixin tabletAbove($use-rem: false) {
+    @include minWidthMedia(1024, $use-rem) {
+        @content;
+    }
+}
+
+@mixin tablet($use-rem: false) {
+    @include maxWidthMedia(1023, $use-rem) {
+        @content;
+    }
+}
+
+@mixin mobileAbove($use-rem: false) {
+    @include minWidthMedia(768, $use-rem) {
+        @content;
+    }
+}
+
+@mixin mobile($use-rem: false) {
+    @include maxWidthMedia(767, $use-rem) {
+        @content;
+    }
+}
+
+@mixin mobile-sAbove($use-rem: false) {
+    @include minWidthMedia(481, $use-rem) {
+        @content;
+    }
+}
+
+@mixin mobile-s($use-rem: false) {
+    @include maxWidthMedia(480, $use-rem) {
+        @content;
+    }
+}
+
+@mixin lessMoreContrast {
+    @media (prefers-contrast: less) or (prefers-contrast: more) {
+        @content;
+    }
+}
+
+@mixin prefersContrast($contrast) {
+    @media (prefers-contrast: $contrast) {
+        @content;
+    }
+}
+
+@mixin activeForcedColors() {
+    @media (forced-colors: active) {
+        @content;
+    }
+}
+
+@mixin colorScheme($scheme) {
+    @media (prefers-color-scheme: $scheme) {
+        @content;
+    }
+}
+
+@mixin orientation($orientation) {
+    @media (orientation: $orientation) {
+        @content;
+    }
+}
+
+@mixin hover($enable-phone-tap-effect: false) {
+    @media (hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+
+    @if ($enable-phone-tap-effect) {
+        @media (hover: none) {
+            &:active {
+                @content;
+            }
+        }
+    }
+}

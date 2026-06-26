@@ -1,0 +1,25 @@
+.header-link {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: var(--border-15);
+
+    @include hover {
+        background-color: #282828;
+    }
+
+    @include lessMoreContrast() {
+        border-width: 2px !important;
+        border-style: solid !important;
+    }
+
+    @include prefersContrast(more) {
+        color: var(--font-color);
+        background-color: #6319ff;
+
+        @include hover() {
+            background-color: #9CE600;
+            color: var(--font-color-rev);
+        }
+    }
+}
